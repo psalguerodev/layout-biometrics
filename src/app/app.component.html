@@ -4,17 +4,17 @@
       <mat-icon>menu</mat-icon>
     </button>
     <mat-menu #menu="matMenu" [overlapTrigger]="false">
-      <button mat-menu-item>
+      <button mat-menu-item routerLink="home">
         <mat-icon>home</mat-icon>
         <span>Home</span>
       </button>
-      <button mat-menu-item>
+      <button mat-menu-item routerLink="biometrics">
         <mat-icon>verified_user</mat-icon>
         <span>Biometrics</span>
       </button>
     </mat-menu>
   </span>
-  <span class="fill-remaining-space">Spike Micro frontend with Web Components </span>
+  <span class="fill-remaining-space">Spike Micro frontend</span>
 </mat-toolbar>
 
 <router-outlet></router-outlet>

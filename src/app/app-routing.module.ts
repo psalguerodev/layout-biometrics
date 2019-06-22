@@ -5,8 +5,8 @@ import { InfoComponent } from './pages/info/info.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
-  { path: 'info', component: InfoComponent },
-  { path: '**', redirectTo: 'home' }
+  { path: 'biometrics', component: InfoComponent },
+  { path: '**', redirectTo: 'biometrics' }
 ];
 
 @NgModule({
