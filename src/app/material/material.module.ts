@@ -9,6 +9,7 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatTableModule } from '@angular/material/table';
 import { MatIconModule } from '@angular/material/icon';
 import { MatMenuModule } from '@angular/material/menu';
+import { MatSelectModule } from '@angular/material/select';
 
 @NgModule({
   declarations: [],
@@ -23,6 +24,7 @@ import { MatMenuModule } from '@angular/material/menu';
     MatTableModule,
     MatIconModule,
     MatMenuModule,
+    MatSelectModule
   ],
   exports: [
     MatButtonModule,
@@ -34,6 +36,7 @@ import { MatMenuModule } from '@angular/material/menu';
     MatTableModule,
     MatIconModule,
     MatMenuModule,
+    MatSelectModule
   ]
 })
 export class MaterialModule { }

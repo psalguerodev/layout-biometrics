@@ -1,7 +1,46 @@
-
 <div class="container">
-  <h3>Welcome to Micro frontend by <strong style="color: orange;">psalguerodev</strong></h3>
+  <h3>
+    Welcome to Micro frontend by
+    <strong style="color: orange;">psalguerodev</strong>
+  </h3>
 
-  <wc-transaction-cart></wc-transaction-cart>
+  <h4 style="color:lime; size: 16px">Recieve: <pre *ngIf="resultProcess != null">{{resultProcess | json}}</pre></h4>
 
+  <mat-form-field>
+    <mat-label>Document Type</mat-label>
+    <mat-select
+      #fontSize
+      value="16px"
+      (selectionChange)="triggerResize($event)"
+      [(ngModel)]="customer.documentType"
+    >
+      <mat-option value="DNI">DNI</mat-option>
+      <mat-option value="CE">CE</mat-option>
+      <mat-option value="PASS">PASS</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+    <input
+      matInput
+      placeholder="Document Number"
+      [(ngModel)]="customer.documentNumber"
+    />
+  </mat-form-field>
+
+  <mat-form-field class="example-full-width">
+    <input
+      matInput
+      placeholder="Fullname"
+      [(ngModel)]="customer.fullName"
+    />
+  </mat-form-field>
+
+  <wc-transaction-cart
+    [customer]="customer"
+    [documentNumber]="customer.documentNumber"
+    [documentType]="customer.documentType"
+    [fullName]="customer.fullName"
+    (evtProcess)="handleProcess($event)"
+  ></wc-transaction-cart>
 </div>
