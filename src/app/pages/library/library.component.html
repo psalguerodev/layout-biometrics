@@ -1,0 +1,23 @@
+<div class="container">
+
+  <h3>Calc Library <span style="color:orange">(@psalguerodev/calc)</span> </h3>
+
+  <mat-form-field class="example-full-width">
+    <input
+      matInput
+      type="number"
+      placeholder="Number One"
+      [(ngModel)]="numberOne"
+    />
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <input
+      matInput
+      type="number"
+      placeholder="Number Two"
+      [(ngModel)]="numberTwo"
+    />
+  </mat-form-field>
+
+  <lib-calc [numberOne]="numberOne" [numberTwo]="numberTwo"></lib-calc>
+</div>

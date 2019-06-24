@@ -80,6 +80,8 @@ MIT
 @angular/router
 MIT
 
+@psalguerodev/calc
+
 hammerjs
 MIT
 The MIT License (MIT)
