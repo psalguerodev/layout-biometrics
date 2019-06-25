@@ -9,6 +9,7 @@ export class LibraryComponent implements OnInit {
 
   numberOne: number;
   numberTwo:number;
+  name: string;
 
   constructor() { }
 

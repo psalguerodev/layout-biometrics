@@ -82,6 +82,8 @@ MIT
 
 @psalguerodev/calc
 
+@psalguerodev/weather
+
 hammerjs
 MIT
 The MIT License (MIT)

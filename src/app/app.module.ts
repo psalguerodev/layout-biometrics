@@ -10,7 +10,7 @@ import { MaterialModule } from './material/material.module';
 import { FormsModule } from '@angular/forms';
 import { CalcModule } from '@psalguerodev/calc';
 import { LibraryComponent } from './pages/library/library.component';
-
+import { WeatherModule } from '@psalguerodev/weather';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +24,8 @@ import { LibraryComponent } from './pages/library/library.component';
     BrowserAnimationsModule,
     MaterialModule,
     FormsModule,
-    CalcModule
+    CalcModule,
+    WeatherModule
   ],
   providers: [],
   bootstrap: [AppComponent],
