@@ -1,39 +1,65 @@
 <div class="container">
   <div class="container library">
-  <h3>Calc Library <span style="color:orange">(@psalguerodev/calc)</span></h3>
+    <h3>Calc Library <span style="color:orange">(@psalguerodev/calc)</span></h3>
 
-  <mat-form-field class="example-full-width">
-    <input
-      matInput
-      type="number"
-      placeholder="Number One"
-      [(ngModel)]="numberOne"
-    />
-  </mat-form-field>
-  <mat-form-field class="example-full-width">
-    <input
-      matInput
-      type="number"
-      placeholder="Number Two"
-      [(ngModel)]="numberTwo"
-    />
-  </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <input
+        matInput
+        type="number"
+        placeholder="Number One"
+        [(ngModel)]="numberOne"
+      />
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <input
+        matInput
+        type="number"
+        placeholder="Number Two"
+        [(ngModel)]="numberTwo"
+      />
+    </mat-form-field>
 
-  <lib-calc [numberOne]="numberOne" [numberTwo]="numberTwo"></lib-calc>
+    <lib-calc [numberOne]="numberOne" [numberTwo]="numberTwo"></lib-calc>
+  </div>
+
+  <div class="container library">
+    <h3>
+      Weather Library <span style="color:orange">(@psalguerodev/weather)</span>
+    </h3>
+    <mat-form-field class="example-full-width">
+      <input
+        matInput
+        type="text"
+        placeholder="Enter your name"
+        [(ngModel)]="name"
+      />
+    </mat-form-field>
+    <lib-weather [name]="name"></lib-weather>
+  </div>
+
+  <div class="container library">
+    <h3>Auth Library <span style="color:orange">(@psalguerodev/auth)</span></h3>
+    <mat-form-field class="example-full-width">
+      <input
+        matInput
+        type="text"
+        placeholder="Register"
+        [(ngModel)]="register"
+      />
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <input
+        matInput
+        type="password"
+        placeholder="Password"
+        [(ngModel)]="password"
+      />
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" (click)="loginWithLibrary()">LOGIN</button>
+
+    <pre *ngIf="authResult != null" style="color: lime;">{{authResult | json}}</pre>
+    <pre *ngIf="showBadCredential" style="color: lime;">Bad Credentials</pre>
+  </div>
 </div>
 
-<div class="container library">
-  <h3>
-    Weather Library <span style="color:orange">(@psalguerodev/weather)</span>
-  </h3>
-  <mat-form-field class="example-full-width">
-    <input
-      matInput
-      type="text"
-      placeholder="Enter your name"
-      [(ngModel)]="name"
-    />
-  </mat-form-field>
-  <lib-weather [name]="name"></lib-weather>
-</div>
-</div>

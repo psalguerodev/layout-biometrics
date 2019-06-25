@@ -11,6 +11,8 @@ import { FormsModule } from '@angular/forms';
 import { CalcModule } from '@psalguerodev/calc';
 import { LibraryComponent } from './pages/library/library.component';
 import { WeatherModule } from '@psalguerodev/weather';
+import { AuthModule } from '@psalguerodev/auth';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -25,7 +27,8 @@ import { WeatherModule } from '@psalguerodev/weather';
     MaterialModule,
     FormsModule,
     CalcModule,
-    WeatherModule
+    WeatherModule,
+    AuthModule
   ],
   providers: [],
   bootstrap: [AppComponent],

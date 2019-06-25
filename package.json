@@ -22,6 +22,7 @@
     "@angular/platform-browser": "~8.0.0",
     "@angular/platform-browser-dynamic": "~8.0.0",
     "@angular/router": "~8.0.0",
+    "@psalguerodev/auth": "^1.0.0",
     "@psalguerodev/calc": "^1.0.0",
     "@psalguerodev/weather": "^1.0.0",
     "document-register-element": "^1.7.2",
