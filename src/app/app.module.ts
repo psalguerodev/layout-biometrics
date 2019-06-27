@@ -36,4 +36,11 @@ import { AuthModule } from '@psalguerodev/auth';
     CUSTOM_ELEMENTS_SCHEMA
   ]
 })
-export class AppModule { }
+export class AppModule {
+
+  constructor() {
+  }
+
+
+
+}
