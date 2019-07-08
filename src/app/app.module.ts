@@ -12,13 +12,15 @@ import { CalcModule } from '@psalguerodev/calc';
 import { LibraryComponent } from './pages/library/library.component';
 import { WeatherModule } from '@psalguerodev/weather';
 import { AuthModule } from '@psalguerodev/auth';
+import { BioComponent } from './pages/bio/bio.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     InfoComponent,
-    LibraryComponent
+    LibraryComponent,
+    BioComponent
   ],
   imports: [
     BrowserModule,

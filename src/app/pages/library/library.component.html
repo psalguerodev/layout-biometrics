@@ -38,7 +38,7 @@
   </div>
 
   <div class="container library">
-    <h3>Auth Library <span style="color:orange">(@psalguerodev/auth)</span></h3>
+    <h3>Auth Library <span>(@psalguerodev/auth)</span></h3>
     <mat-form-field class="example-full-width">
       <input
         matInput
@@ -58,8 +58,8 @@
 
     <button mat-raised-button color="primary" (click)="loginWithLibrary()">LOGIN</button>
 
-    <pre *ngIf="authResult != null" style="color: lime;">{{authResult | json}}</pre>
-    <pre *ngIf="showBadCredential" style="color: lime;">Bad Credentials</pre>
+    <pre *ngIf="authResult != null" style="color: darkblue;">{{authResult | json}}</pre>
+    <pre *ngIf="showBadCredential" style="color: darkblue;">Bad Credentials</pre>
   </div>
 </div>
 

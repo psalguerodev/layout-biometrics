@@ -3,7 +3,11 @@
 
   <h3>Biometrics Page</h3>
 
-  <pre>Received from web component to Host: {{result}}</pre>
+  <div>
+    Received from web component to Host: 👇
+    <pre>{{result}}</pre>
+  </div>
+  
 
   <mat-form-field class="example-full-width">
     <span matPrefix>DNI &nbsp;</span>
@@ -14,7 +18,5 @@
     [documentNumber]="documentNumber"
     (evtSucess)="handleSuccess($event)" >
   </wc-biometrics>
-
-  <wc-hello></wc-hello>
 
 </div>

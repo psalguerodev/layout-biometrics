@@ -1,10 +1,11 @@
 <div class="container">
   <h3>
     Welcome to Micro frontend by
-    <strong style="color: orange;">psalguerodev</strong>
+    <strong style="color: darkblue;">psalguerodev</strong>
   </h3>
 
-  <h4 style="color:lime; size: 16px">Received: <pre *ngIf="resultProcess != null">{{resultProcess | json}}</pre></h4>
+  <h4 style="color:darkblue; size: 16px">Received: <pre *ngIf="resultProcess !=
+      null">{{resultProcess | json}}</pre></h4>
 
   <mat-form-field>
     <mat-label>Document Type</mat-label>
@@ -12,8 +13,7 @@
       #fontSize
       value="16px"
       (selectionChange)="triggerResize($event)"
-      [(ngModel)]="customer.documentType"
-    >
+      [(ngModel)]="customer.documentType">
       <mat-option value="DNI">DNI</mat-option>
       <mat-option value="CE">CE</mat-option>
       <mat-option value="PASS">PASS</mat-option>
@@ -25,7 +25,7 @@
       matInput
       placeholder="Document Number"
       [(ngModel)]="customer.documentNumber"
-    />
+      />
   </mat-form-field>
 
   <mat-form-field class="example-full-width">
@@ -33,7 +33,7 @@
       matInput
       placeholder="Fullname"
       [(ngModel)]="customer.fullName"
-    />
+      />
   </mat-form-field>
 
 
@@ -43,7 +43,5 @@
     [documentNumber]="customer.documentNumber"
     [documentType]="customer.documentType"
     [fullName]="customer.fullName"
-    (evtProcess)="handleProcess($event)"
-  ></wc-transaction-cart>
+    (evtProcess)="handleProcess($event)"></wc-transaction-cart>
 </div>
-
